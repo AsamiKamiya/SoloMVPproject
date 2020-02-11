@@ -59,6 +59,17 @@ img{
     float:left;
 }
 
+.buttons:hover {
+  -webkit-animation: spin .3s ease-in-out;
+  animation: spin .3s ease-in-out;
+}
+@-webkit-keyframes spin {
+  100% { -webkit-transform: rotateY(360deg); }
+}
+@keyframes spin {
+  100% { transform: rotateY(360deg); }
+}
+
 .check {
     padding: 0.2em 0.5em;
     margin: 2em auto;
@@ -70,7 +81,16 @@ img{
     cursor: pointer;
     width:100px;
 }
-
+.check:hover {
+  -webkit-animation: scale .3s ease-in-out;
+  animation: scale .3s ease-in-out;
+}
+@-webkit-keyframes scale {
+  50% { -webkit-transform: scale(1.1); }
+}
+@keyframes scale {
+  50% { transform: scale(1.1); }
+}
 .ranges {
     -webkit-appearance: none;
     appearance: none;
@@ -133,6 +153,29 @@ img{
     margin:25px 0 0 0;
     font-size: 25px;
 }
+
+.hearts{
+    animation: Flash1 2s infinite;
+    width: 30px;
+    height:30px;
+
+  }
+  @keyframes Flash1{
+    50%{
+      opacity: 0;
+    }
+  }
+  
+.start:hover {
+    -webkit-animation: spin .3s ease-in-out;
+    animation: spin .3s ease-in-out;
+  }
+  @-webkit-keyframes spin {
+    100% { -webkit-transform: rotateY(360deg); }
+  }
+  @keyframes spin {
+    100% { transform: rotateY(360deg); }
+  }
   /*/////////////////////////////////////////////*/
   .loader {
     color: #ffffff;

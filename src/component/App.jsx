@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {useSelector, useDispatch} from "react-redux";
 
 import Milk from "./Milk";
@@ -7,6 +7,7 @@ import Result from "./Result"
 import "../css/app.css"
 import { changeView } from "../redux/redux";
 import logo from '../image/cups.png';
+import heart from '../image/hearts.png';
 
 export default function App() {
 
@@ -18,7 +19,7 @@ export default function App() {
   }
     let body;
     if  (view === "top") {
-        body = ( <div className="start" onClick={()=>{clickChange("milkSelect")}}><p>START</p></div>)
+        body = ( <div className="start circle" onClick={()=>{clickChange("milkSelect")}}><p>START</p></div>)
     } else if (view === "milkSelect"){
         body =  <Milk></Milk>
     } else if (view === "flavour") {
@@ -35,6 +36,8 @@ export default function App() {
       <div className="content">
       {body}
       </div>
+
+      <img src={heart} className="hearts"></img><br></br>
       <img src={logo}></img>
 
 </div>
