@@ -43,7 +43,7 @@ body: 5,
 sweet: 4,
 bitter: 1,
 color:5,
-kind: "Darjeeling",
+kind: "Assam",
 recommend: "5",
 milk: true
 },

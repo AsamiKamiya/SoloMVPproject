@@ -73,7 +73,7 @@ const data = {
   return (
     <div className="result">
       <div className="resultNode">my recommendation</div>
-      <div className="teaName">{viewResult.name}</div>
+      <span className="teaName">{viewResult.name}</span>
       <div>Season : {viewResult.season}</div>
       <div>Kinds : {viewResult.kind}</div>
       <div className="forRadar">

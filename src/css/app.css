@@ -1,6 +1,7 @@
 body {
     background-color: #CD6155;
     font-family: "Ravi Prakash", cursive;
+    font-size:25px;
 }
 .form{
     position:absolute;
@@ -107,7 +108,7 @@ img{
     min-width: 120px;
     max-width: 100%;
     color: #555;
-    font-size: 16px;
+    font-size: 20px;
     background: white;
     border-radius: 10px;
   }
@@ -135,8 +136,8 @@ img{
     border: dashed 2px white;
     padding: 0.2em 0.5em;
     color: #454545;
-    width:150px;
-    margin: 25px auto 0px auto;
+    width:200px;
+    margin: 25px auto ;
 }
 .resultNode:after{
     position: absolute;
@@ -151,7 +152,7 @@ img{
 
 .teaName {
     margin:25px 0 0 0;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .hearts{
