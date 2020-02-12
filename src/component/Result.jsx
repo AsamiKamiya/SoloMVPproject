@@ -27,21 +27,8 @@ for (const index in results) {
     tempResults[index]++;
   }
 }
-for (const index in tempResults) {
-  if (tempResults[index] === 5) {
-    viewResult = results[index];
-  } else if (tempResults[index] === 4) {
-    viewResult = results[index];
-  } else if (tempResults[index] === 3) {
-    viewResult = results[index];
-  } else if (tempResults[index] === 2) {
-    viewResult = results[index];
-  } else if (tempResults[index] === 1) {
-    viewResult = results[index];
-  } else {
-    viewResult = results[0];
-  }
-}
+const max = Math.max.apply(null, tempResults); 
+viewResult = results[tempResults.indexOf(max)];
 
 const data = {
   labels: ['AROMA', 'BODY', 'SWEET', 'BITTER', 'COLOR'],

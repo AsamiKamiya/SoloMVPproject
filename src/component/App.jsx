@@ -38,7 +38,7 @@ export default function App() {
       </div>
 
       <img src={heart} className="hearts"></img><br></br>
-      <img src={logo}></img>
+      <img src={logo} onClick={()=>{clickChange("top")}}></img>
 
 </div>
     </div>
